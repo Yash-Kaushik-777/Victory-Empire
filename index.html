@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victory Empire — Premium Video Content & Production Engine</title>
+  <meta name="description" content="Victory Empire builds cinematic video content engines, viral short-form systems, and high-retention YouTube strategies for founders and category-leading brands.">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Victory Empire — Premium Video Content & Production Engine">
+  <meta property="og:description" content="Cinematic video content, viral short-form systems, and high-converting YouTube strategies for growth brands.">
+  <meta property="og:url" content="https://www.victoryempire.co/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Geist:wght@300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- Ambient Texture Overlay -->
+  <div class="ambient-grain" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Victory Empire Home">
+        <div class="nav-logo-crown">
+          <svg viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 26L0 8L10 15L20 2L30 15L40 8L36 26H4Z" fill="url(#nav-crown-grad)"/>
+            <circle cx="0" cy="8" r="2.2" fill="#FFFFFF"/>
+            <circle cx="20" cy="2" r="2.8" fill="#FFFFFF"/>
+            <circle cx="40" cy="8" r="2.2" fill="#FFFFFF"/>
+            <defs>
+              <linearGradient id="nav-crown-grad" x1="20" y1="2" x2="20" y2="26" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFFFFF"/>
+                <stop offset="0.5" stop-color="#C084FC"/>
+                <stop offset="1" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="nav-brand-victory">VICTORY</span>
+          <span class="nav-brand-empire">EMPIRE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link">HOME</a>
+        <a href="#work" class="nav-link">SERVICES</a>
+        <a href="#process" class="nav-link">HOW WE WORK</a>
+        <a href="#testimonials" class="nav-link">TESTIMONIALS</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://cal.com/ishmeet1/30min" class="btn btn-purple btn-booking">
+          BUILD AN EMPIRE
+        </a>
+
+        <button class="nav-mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#work" class="mobile-nav-link">Services</a>
+      <a href="#process" class="mobile-nav-link">How We Work</a>
+      <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="https://cal.com/ishmeet1/30min" class="btn btn-purple btn-booking" style="margin-top: 1.5rem;">
+        BUILD AN EMPIRE
+      </a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- 01 — INTRO / BRAND REVEAL -->
+    <section id="intro" aria-label="Brand Reveal">
+      <div class="intro-center" id="intro-branding">
+        <div class="intro-brand-stack">
+          <div class="intro-crown-symbol" aria-hidden="true">
+            <svg viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 24L0 6L11 14L20 1L29 14L40 6L37 24H3Z" fill="url(#icg)"/>
+              <circle cx="0" cy="6" r="2.5" fill="#C084FC"/>
+              <circle cx="20" cy="1" r="3" fill="#C084FC"/>
+              <circle cx="40" cy="6" r="2.5" fill="#C084FC"/>
+              <defs>
+                <linearGradient id="icg" x1="20" y1="1" x2="20" y2="24" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#E8D5FF"/>
+                  <stop offset="0.5" stop-color="#A855F7"/>
+                  <stop offset="1" stop-color="#7C3AED"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="intro-brand-title">
+            <span class="intro-brand-victory">VICTORY</span>
+            <span class="intro-brand-empire">EMPIRE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 — HERO / CORE PROMISE -->
+    <section id="hero" class="section">
+      <!-- Shared atmospheric background (starfield + floor) -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-stars" aria-hidden="true"></div>
+        <canvas class="hero-stars-canvas" id="hero-stars-canvas" aria-hidden="true"></canvas>
+        <div class="hero-floor" aria-hidden="true">
+          <div class="hero-floor-glow"></div>
+          <div class="hero-floor-grid"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-split-grid">
+
+          <div class="hero-content">
+            <div class="hero-badge hero-reveal-item">
+              <span class="badge-dot"></span>
+              <span>CINEMATIC MEDIA STUDIO</span>
+            </div>
+
+            <h1 class="hero-headline">
+              <span class="hero-line hero-reveal-item">WE BUILD HIGH-IMPACT</span>
+              <span class="hero-line hero-reveal-item">CONTENT ENGINES THAT</span>
+              <span class="hero-line hero-line-accent hero-reveal-item">SCALE BRANDS &amp; CREATORS</span>
+            </h1>
+
+            <p class="hero-description hero-reveal-item">
+              Victory Empire produces cinematic video content, viral short-form systems, and high-converting YouTube strategies that position founders as category leaders.
+            </p>
+
+            <div class="hero-actions hero-reveal-item">
+              <a href="https://cal.com/ishmeet1/30min" class="btn btn-purple hero-btn-primary">
+                BUILD AN EMPIRE
+              </a>
+              <a href="#work" class="btn hero-btn-secondary">
+                SEE OUR WORK
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 — 20+ HOURS PROOF & OUR CLIENTS -->
+    <section id="trust-proof" class="section section-dark">
+      <div class="container">
+        <div class="proof-panel-col proof-panel-centered">
+          <span class="proof-eyebrow">COMPANY INFORMATION &amp; VALUE PROOF</span>
+
+          <h2 class="proof-headline">
+            <span class="proof-number" data-count="20" data-suffix="+">0+</span>
+            <span class="proof-unit">HOURS SAVED</span>
+            <span class="proof-period">EVERY WEEK.</span>
+          </h2>
+
+          <div class="proof-divider"></div>
+
+          <p class="proof-description">
+            Our full-service video system handles strategy, scripting, filming, editing, motion graphics, sound design, and multi-platform distribution so founders focus purely on growing their empire.
+          </p>
+
+          <div class="proof-details-grid">
+            <div class="proof-detail-item">
+              <span class="proof-detail-val" data-count="100" data-suffix="%">0%</span>
+              <span class="proof-detail-lbl">TURNKEY PRODUCTION</span>
+            </div>
+            <div class="proof-detail-item">
+              <span class="proof-detail-val" data-count="8" data-suffix="+">0+</span>
+              <span class="proof-detail-lbl">FORMAT ENGINE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clients-block">
+        <div class="container">
+          <h2 class="clients-title">Our Clients:</h2>
+        </div>
+        <div class="clients-marquee-wrap">
+          <div class="marquee-container">
+            <div class="marquee-track marquee-track-row1" id="trust-marquee-1"></div>
+          </div>
+          <div class="marquee-container">
+            <div class="marquee-track marquee-track-reverse marquee-track-row2" id="trust-marquee-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 — CONTENT ENGINE (REVOLVING ORBIT REDESIGN) -->
+    <section id="engine" class="section section-dark engine-section">
+      <div class="container">
+        <div class="section-header engine-header">
+          <div class="badge engine-badge">
+            <span class="badge-dot"></span>
+            <span>THE ENGINE</span>
+          </div>
+          <h2 class="section-title engine-title">ONE IDEA. <span class="highlight">INFINITE DISTRIBUTION.</span></h2>
+          <p class="engine-subtitle">We transform your core messaging into a high-performing multi-channel media ecosystem.</p>
+        </div>
+
+        <div class="engine-orbit-stage" id="engine-orbit-stage">
+          <!-- Center Master Card & 6 Revolving Orbit Cards initialized by js/components/contentEngine.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 — SERVICES & VIDEO TYPES -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>CAPABILITIES</span>
+          </div>
+          <h2 class="section-title">SERVICES &amp; VIDEO TYPES</h2>
+          <p>Explore real Victory Empire production examples across 8 verified categories.</p>
+        </div>
+
+        <div class="portfolio-filters" id="portfolio-filters"></div>
+        <div class="portfolio-grid" id="portfolio-grid"></div>
+      </div>
+    </section>
+
+    <!-- 07 — HOW WE WORK -->
+    <section id="process" class="process-section">
+      <div id="process-root">
+        <!-- Populated by js/components/processScroll.js -->
+      </div>
+    </section>
+
+    <!-- 08 — MORE EXAMPLES -->
+    <section id="examples" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>GALLERY</span>
+          </div>
+          <h2 class="section-title">MORE EXAMPLES</h2>
+          <p>Additional short-form and long-form productions from the Victory Empire portfolio.</p>
+        </div>
+
+        <div class="examples-scroll-track" id="examples-grid"></div>
+      </div>
+    </section>
+
+    <!-- 10 — TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>SOCIAL PROOF</span>
+          </div>
+          <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
+        </div>
+      </div>
+
+      <div class="testimonials-wrapper" id="testimonials-container"></div>
+    </section>
+
+    <!-- 12 — FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-header" style="text-align: center; margin-left: auto; margin-right: auto;">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>CLEAR ANSWERS</span>
+          </div>
+          <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+        </div>
+
+        <div class="faq-wrapper" id="faq-accordion"></div>
+      </div>
+    </section>
+
+    <!-- 13 — OUTRO / CINEMATIC FOOTER -->
+    <section id="outro" class="outro-section" aria-label="Victory Empire Closing">
+      <canvas id="outro-canvas" aria-hidden="true"></canvas>
+
+      <div class="outro-layout container">
+        <div class="outro-top">
+          <div class="outro-left">
+            <h2 class="outro-heading">Ready to build<br>your empire?</h2>
+            <p class="outro-copy">&copy; VICTORY EMPIRE 2026</p>
+            <p class="outro-hint">HOVER THE LINES ↓</p>
+          </div>
+
+          <div class="outro-right">
+            <a href="https://cal.com/ishmeet1/30min" class="outro-collab btn-booking" target="_blank" rel="noopener noreferrer">
+              START A COLLABORATION <span aria-hidden="true">→</span>
+            </a>
+
+            <div class="outro-meta-grid">
+              <div class="outro-meta-col">
+                <span class="outro-meta-label">BUSINESS ENQUIRY</span>
+                <a href="https://cal.com/ishmeet1/30min" class="outro-meta-link" target="_blank" rel="noopener noreferrer">E. Book a strategy call</a>
+                <a href="https://cal.com/ishmeet1/30min" class="outro-meta-link" target="_blank" rel="noopener noreferrer">P. Schedule via Cal.com</a>
+              </div>
+              <div class="outro-meta-col outro-meta-col-social">
+                <span class="outro-meta-label">CONNECT</span>
+                <div class="outro-social-grid">
+                  <a href="#" id="link-linkedin" class="outro-meta-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="#" id="link-youtube" class="outro-meta-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+                  <a href="#" id="link-instagram" class="outro-meta-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                  <a href="#" id="link-linktree" class="outro-meta-link" target="_blank" rel="noopener noreferrer">Linktree</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="outro-wordmark-wrap">
+          <h2 class="outro-wordmark" id="outro-wordmark" aria-label="Victory Empire">VICTORY EMPIRE</h2>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 VICTORY EMPIRE. ALL RIGHTS RESERVED.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VIDEO PLAYER LIGHTBOX MODAL -->
+  <div class="modal-overlay" id="video-modal" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close" aria-label="Close Video Preview">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-video-wrapper" id="modal-video-wrapper"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript Entry Point -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.cursor/
+
+# Logs / temp
+*.log
+*.tmp
+
+# Local server helpers (optional — keep main server.ps1 in repo)
+# restart-server.ps1 is kept for convenience

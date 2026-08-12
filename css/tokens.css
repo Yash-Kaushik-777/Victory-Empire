@@ -1,0 +1,77 @@
+/* ============================================================
+   VICTORY EMPIRE — DESIGN SYSTEM TOKENS (REDESIGN PASS)
+   ============================================================ */
+
+:root {
+  /* Colors — Sophisticated Slate Neutral + Refined Purple Accent */
+  --bg-primary: #000000;
+  --bg-secondary: #000000;
+  --bg-tertiary: #0a0a0a;
+  --bg-elevated: #111111;
+  
+  --text-primary: #F5F5F5;
+  --text-secondary: #A0A0A0;
+  --text-muted: #6B7280;
+  --text-inverse: #050505;
+  
+  --accent-purple: #8B5CF6;
+  --accent-purple-hover: #9F7AEA;
+  --accent-purple-muted: rgba(139, 92, 246, 0.12);
+  --accent-purple-glow: rgba(139, 92, 246, 0.25);
+
+  --border-subtle: rgba(245, 245, 245, 0.08);
+  --border-strong: rgba(245, 245, 245, 0.18);
+  --border-purple: rgba(139, 92, 246, 0.35);
+
+  /* Fonts */
+  --font-sans: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Geist', 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* Typography Scale — Scaled down for air, composure, & balance */
+  --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.82rem + 0.25vw, 0.9375rem);
+  --text-base: clamp(0.95rem, 0.9rem + 0.3vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.4vw, 1.25rem);
+  --text-xl: clamp(1.35rem, 1.25rem + 0.6vw, 1.625rem);
+  --text-2xl: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
+  --text-3xl: clamp(2.25rem, 1.8rem + 1.5vw, 3rem);
+  --text-hero: clamp(2.5rem, 2rem + 2.5vw, 4.25rem);
+
+  /* Spacing — Controlled section margins & container padding */
+  --space-xs: 0.5rem;
+  --space-sm: 0.875rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: 6.5rem;
+
+  --section-padding-y: clamp(3.5rem, 6vh, 6.5rem);
+  --container-max: 1280px;
+  --container-pad: clamp(1.25rem, 4vw, 3rem);
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+  --transition-fast: 0.2s var(--ease-out-expo);
+  --transition-normal: 0.4s var(--ease-out-expo);
+  --transition-slow: 0.6s var(--ease-out-expo);
+
+  /* Elevation & Shadows */
+  --shadow-card: 0 16px 32px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 25px rgba(139, 92, 246, 0.2);
+
+  /* Z-Index Hierarchy */
+  --z-negative: -1;
+  --z-base: 1;
+  --z-above: 10;
+  --z-nav: 100;
+  --z-modal: 1000;
+}
